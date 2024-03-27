@@ -1,0 +1,12 @@
+.marise {
+    height: 100vh; /* 100% da altura da janela do navegador */
+    width: 100%;
+    display: flex;
+    background-image: url(https://img.freepik.com/fotos-premium/mulher-caucasiana-madura-mostra-um-tablet-digital-de-tela_262388-6053.jpg?w=740);
+    background-size: cover;
+}
+
+.caixa{
+    height: 100px;
+    width: 100px;
+}

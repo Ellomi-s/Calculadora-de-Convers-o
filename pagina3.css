@@ -1,0 +1,33 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.tablet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1000px;
+    border: solid 10px;
+    border-color: white;
+    border-radius: 50px;
+    background-color: white;
+}
+.tela{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    background-image:url(https://i.pinimg.com/originals/49/df/fa/49dffa6895c846a3ed15120c233ef901.jpg);
+    background-size: cover;
+}
+.caixa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

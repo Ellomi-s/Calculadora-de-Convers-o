@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="ptbr">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ellomi</title>
+        <link rel="stylesheet" href="pagina3.css">
+</head>
+
+<body>
+        <div class="tablet">
+                <div class="tela">
+                        <div class=caixa>
+                                <h1>Ellomi's Machine</h1>
+
+                                <input id="inp_valor" type="text" placeholder="Digite o valor">
+
+                                <h2>Base do número acima:</h2>
+
+                                <select id="select_de">
+                                        <option value="10">Decimal</option>
+                                        <option value="2">Binário</option>
+                                        <option value="8">Octal</option>
+                                        <option value="16">Hexadecimal</option>
+                                </select>
+
+
+                                <br><br>
+
+                                <h2>converter para:</h2>
+
+                                <select id="select_para">
+                                        <option value="10">Decimal</option>
+                                        <option value="2">Binário</option>
+                                        <option value="8">Octal</option>
+                                        <option value="16">Hexadecimal</option>
+                                </select>
+                                <br>
+                                <button onclick="converter()">Converter</button>
+                        </div>
+                </div>
+        </div>
+</body>
+
+
+
+</body>
+
+<script>
+
+        function converter() {
+                let de = select_de.value
+                let para = select_para.value
+
+                let valor = inp_valor.value
+                valor = parseInt(valor, de)
+
+                devolvido = valor.toString(para).toUpperCase()
+
+
+                alert(devolvido)
+
+                console.log(devolvido)
+
+        }
+</script>
+</html>
+<!-- lógica da calculadora/conversor (funcionou só o decimal pra binário)
+
+temos que centralizar nossa div "tablet" e "caixa" -->
