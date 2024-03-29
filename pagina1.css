@@ -1,12 +1,31 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
 .marise {
     height: 100vh; /* 100% da altura da janela do navegador */
     width: 100%;
     display: flex;
+    background-color: #e0e1e5;
     background-image: url(https://img.freepik.com/fotos-premium/mulher-caucasiana-madura-mostra-um-tablet-digital-de-tela_262388-6053.jpg?w=740);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
 }
 
 .caixa{
     height: 100px;
     width: 100px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    left: 600px;
+    bottom: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.botao{
+    background-color: yellow;
 }
