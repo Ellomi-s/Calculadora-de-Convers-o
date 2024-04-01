@@ -7,15 +7,21 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ellomi</title>
-        <link rel="stylesheet" href="pagina3.css">
+        <link rel="stylesheet" href="conversor.css">
 </head>
 
 <body>
         <div class="tablet">
+                <div class="camera"></div>
+                <div class="butao"></div>
                 <div class="tela">
                         <div class=caixa>
-                                <h1>Ellomi's Machine</h1>
+                                <div class="titulo">
+                                        <a href="tablet.html"><button class="botao">Voltar</button></a>
+                                        <h1>Ellomi's Machine</h1>
+                                </div>
 
+                                <h2>Insira um valor:</h2>
                                 <input id="inp_valor" type="text" placeholder="Digite o valor">
 
                                 <h2>Base do número acima:</h2>
@@ -28,7 +34,7 @@
                                 </select>
 
 
-                                <br><br>
+                            
 
                                 <h2>converter para:</h2>
 
@@ -39,7 +45,8 @@
                                         <option value="16">Hexadecimal</option>
                                 </select>
                                 <br>
-                                <button onclick="converter()">Converter</button>
+                                <button id="butao" onclick="converter()">Converter</button>
+                                <div id="div_resultado"></div>
                         </div>
                 </div>
         </div>
@@ -48,6 +55,12 @@
 
 
 </body>
+
+
+</html>
+<!-- lógica da calculadora/conversor (funcionou só o decimal pra binário)
+
+temos que centralizar nossa div "tablet" e "caixa" -->
 
 <script>
 
@@ -61,13 +74,9 @@
                 devolvido = valor.toString(para).toUpperCase()
 
 
-                alert(devolvido)
+                div_resultado.innerHTML = `${devolvido}`
 
                 console.log(devolvido)
 
         }
 </script>
-</html>
-<!-- lógica da calculadora/conversor (funcionou só o decimal pra binário)
-
-temos que centralizar nossa div "tablet" e "caixa" -->

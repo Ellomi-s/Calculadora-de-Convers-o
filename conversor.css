@@ -1,0 +1,102 @@
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1000px;
+    border: solid 10px;
+    border-color: white;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.camera {
+    background-color: rgb(8, 8, 8);
+    width: 15px;
+    height: 15px;
+    border: solid rgb(8, 8, 8) 5px;
+    border-radius: 100%;
+    position: absolute;
+    left: 200px
+}
+
+.butao {
+    background-color: rgb(218, 218, 218);
+    width: 30px;
+    height: 30px;
+    border: solid gray 3px;
+    border-radius: 100%;
+    position: absolute;
+    right: 175px
+}
+
+.tela {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    background: rgb(19, 143, 10);
+    background: linear-gradient(90deg, rgb(27, 27, 27) 30%, rgba(249, 255, 5, 1) 83%);
+    background-size: cover;
+}
+
+.caixa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: white;
+
+}
+
+.caixa .titulo {
+    font-family: cursive;
+    padding-left: 10px;
+    display: flex;
+    position: absolute;
+    align-self: flex-start;
+    margin-bottom: 68vh;
+    width: 138.9vh;
+    height: 10vh;
+    background-color: transparent;
+    color: rgba(249, 255, 5, 1);
+}
+
+#select_de {
+    font-family: cursive;
+    background-color: rgba(249, 255, 5, 1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#select_para {
+    font-family: cursive;
+    background-color:rgba(249, 255, 5, 1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#butao {
+    font-family: cursive;
+    background: black;
+    color: white;
+}
+
+#inp_valor {
+    text-align: center;
+    font-family: cursive;
+}
+
+.botao{
+    display: flex;
+}
