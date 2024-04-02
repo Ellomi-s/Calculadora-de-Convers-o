@@ -5,27 +5,32 @@ body {
 
 .marise {
     height: 100vh; /* 100% da altura da janela do navegador */
-    width: 100%;
+    width: 100wh;
     display: flex;
     background-color: #e0e1e5;
     background-image: url(https://img.freepik.com/fotos-premium/mulher-caucasiana-madura-mostra-um-tablet-digital-de-tela_262388-6053.jpg?w=740);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position: center;
-}
 
-.caixa{
-    height: 100px;
-    width: 100px;
-    background-color: rgba(255, 0, 0, 0);
-    position: absolute;
-    left: 600px;
-    bottom: 115px;
-    display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-
 }
-.botao{
+
+.caixa {
+    position: relative;
+    width: 200px;
+    height: 200px; 
+    bottom: 90px;
+    right: 75px;
+    
+}
+
+.botao {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
     background-color: yellow;
+    border-radius: 7px;
+    
 }

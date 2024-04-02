@@ -1,9 +1,10 @@
 body {
     height: 100%;
-    width: 100%;
+    width: 100wh;
     display: flex;
     justify-content: center;
     background-color: black;
+    align-items: center;
 }
 
 .tablet {
@@ -19,24 +20,14 @@ body {
     background-color: white;
 }
 
-.camera {
-    background-color: rgb(8, 8, 8);
+.camera{
+    background-color:rgb(8, 8, 8);
     width: 15px;
     height: 15px;
     border: solid rgb(8, 8, 8) 5px;
     border-radius: 100%;
     position: absolute;
-    left: 200px
-}
-
-.butao {
-    background-color: rgb(218, 218, 218);
-    width: 30px;
-    height: 30px;
-    border: solid gray 3px;
-    border-radius: 100%;
-    position: absolute;
-    right: 175px
+    left: 285px
 }
 
 .tela {
@@ -70,6 +61,20 @@ body {
     height: 10vh;
     background-color: transparent;
     color: rgba(249, 255, 5, 1);
+    top: 15px;
+    left: 380px;
+}
+
+.caixa .icon_voltar {
+    display: flex;
+    position: relative; 
+    right: 410px;
+    bottom: 40px;
+}
+
+.caixa .voltar { 
+    position: absolute;
+    right: 230px;
 }
 
 #select_de {
@@ -99,4 +104,15 @@ body {
 
 .botao{
     display: flex;
+}
+
+.caixa .icon_voltar {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.caixa .voltar { 
+    position: absolute;
+    right: 230px;
 }
